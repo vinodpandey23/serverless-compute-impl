@@ -1,0 +1,1 @@
+{"metadata":{"name":"currency-converter"},"spec":{"runtime":"python:3.11","handler":"handler:handler","build":{"commands":["pip install msgpack requests"]}},"zip_data":""}

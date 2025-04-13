@@ -1,0 +1,28 @@
+@startuml
+
+skinparam sequenceMessageAlign center
+
+actor User
+participant "[API Gateway]" as APIGateway
+participant "[Nuclio Function Manager]" as NuclioManager
+participant "[Kubernetes API Server]" as KubeAPI
+participant "[Function Pod]" as FunctionPod
+
+== Function Deployment ==
+User -> APIGateway : Send function deployment request
+APIGateway -> NuclioManager : Forward request
+NuclioManager -> KubeAPI : Create deployment YAML
+KubeAPI -> FunctionPod : Deploy function as pod
+FunctionPod -> NuclioManager : Acknowledge deployment
+NuclioManager -> APIGateway : Deployment success response
+APIGateway -> User : Notify function is ready
+
+== Function Execution ==
+User -> APIGateway : Invoke function
+APIGateway -> NuclioManager : Forward execution request
+NuclioManager -> FunctionPod : Execute function
+FunctionPod -> NuclioManager : Return execution result
+NuclioManager -> APIGateway : Forward result
+APIGateway -> User : Return function response
+
+@enduml

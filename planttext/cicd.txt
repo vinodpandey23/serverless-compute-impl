@@ -1,0 +1,26 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define packages and components
+package "CI/CD Layer" {
+
+  ' Group CI/CD components
+  package "CI/CD Pipeline" {
+    [GitHub Actions]
+  }
+
+  ' Interactions with other components
+  [GitHub Actions] --> [Nuclio] : Deploys Functions
+  [GitHub Actions] --> [MinIO] : Pushes Function Code
+}
+
+' Notes for clarity
+note right of [Nuclio]: Serverless compute platform\nfor function execution
+note left of [GitHub Actions]: Automates deployment\nof functions and artifacts
+note right of [MinIO]: Stores system artifacts\n(e.g., function code, container images)
+
+@enduml

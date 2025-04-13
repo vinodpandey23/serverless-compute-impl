@@ -1,0 +1,38 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define packages and components
+package "API Gateway Layer" {
+
+  [APISIX] #..# [Keycloak] : Authentication/Authorization
+
+  ' Group Storage and Database components
+  package "Storage and Database" {
+    [Redis] #..# [Database\n(Cassandra)] : Logs/Configuration
+  }
+
+  [APISIX] #..# [Redis] : Caching
+
+  ' Interfaces for external integrations
+  [APISIX] --> [Nuclio] : Triggers Functions
+  [APISIX] --> [Kafka] : Publishes Events
+  [APISIX] --> [Monitoring and Observability Layer] : Sends Metrics/Logs/Traces
+
+  ' External entities interacting with APISIX
+  [User/Application] --> [APISIX] : Sends Requests
+}
+
+' Notes for clarity
+note right of [APISIX]: Central component for routing,\nauthentication, and logging
+note left of [Keycloak]: Handles OAuth2/OpenID Connect\nfor request authentication
+note right of [Redis]: Caches route mappings\nfor low-latency access
+note left of [Database\n(Cassandra)]: Stores request logs\nand route configurations
+note right of [Nuclio]: Serverless compute platform\nfor function execution
+note right of [Kafka]: Event streaming platform\nfor asynchronous processing
+note left of [Monitoring and Observability Layer]: Collects metrics, logs,\nand traces
+
+@enduml

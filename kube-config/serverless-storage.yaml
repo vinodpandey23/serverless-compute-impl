@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: functions-pv
+  namespace: serverless-poc
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: "/mnt/functions"
+    type: DirectoryOrCreate
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: functions-pvc
+  namespace: serverless-poc
+spec:
+  volumeName: functions-pv
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: logs-pv
+  namespace: serverless-poc
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: "/mnt/logs"
+    type: DirectoryOrCreate
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: logs-pvc
+  namespace: serverless-poc
+spec:
+  volumeName: logs-pv
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard

@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: function-manager
+  namespace: serverless-poc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: function-manager
+  template:
+    metadata:
+      labels:
+        app: function-manager
+    spec:
+      terminationGracePeriodSeconds: 900
+      containers:
+        - name: function-manager
+          image: serverless-poc-function-manager:latest
+          imagePullPolicy: IfNotPresent
+          command: [ "uvicorn", "function_manager:app", "--host", "0.0.0.0", "--port", "5000" ]
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - name: docker-socket
+              mountPath: /var/run/docker.sock
+            - name: functions-volume
+              mountPath: "/mnt/functions"
+            - name: logs-volume
+              mountPath: "/mnt/logs"
+          env:
+            - name: FUNCTIONS_DIR
+              value: "/mnt/functions"
+            - name: LOGS_DIR
+              value: "/mnt/logs"
+            - name: WARM_UP_TIME
+              value: "300"
+          resources:
+            requests:
+              memory: "1.75Gi"
+              cpu: "1.9"
+            limits:
+              memory: "1.75Gi"
+              cpu: "1.9"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 3
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 3
+            periodSeconds: 10
+      volumes:
+        - name: docker-socket
+          hostPath:
+            path: /var/run/docker.sock
+        - name: functions-volume
+          persistentVolumeClaim:
+            claimName: functions-pvc
+        - name: logs-volume
+          persistentVolumeClaim:
+            claimName: logs-pvc
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: function-manager
+  namespace: serverless-poc
+spec:
+  selector:
+    app: function-manager
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  type: ClusterIP
+---

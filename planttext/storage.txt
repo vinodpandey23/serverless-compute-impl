@@ -1,0 +1,42 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define packages and components
+package "Storage Layer" {
+
+  ' Group Storage and Database components
+  package "Storage and Database" {
+    [Redis] #..# [Database\n(Cassandra)] : Logs/Configuration
+    [Redis] #..# [MinIO] : Stores Function Code/Images
+    [MinIO] #..# [Ceph] : Temporary Build Artifacts
+    [Database\n(Cassandra)] --> [Logstash] : Extracts Logs
+  }
+
+  [Logstash] --> [Monitoring and Observability Layer] : Forwards Logs
+
+  ' Interactions with other layers
+  [API Gateway Layer] --> [Redis] : Caches Route Mappings
+  [API Gateway Layer] --> [Database\n(Cassandra)] : Stores Logs/Configs
+  [Compute Layer] --> [Redis] : Caches Function Metadata
+  [Compute Layer] --> [MinIO] : Stores Function Code/Images
+  [Compute Layer] --> [Ceph] : Temporary Build Artifacts
+  [CI/CD Layer] --> [MinIO] : Pushes Function Code
+  [Storage and Database] --> [Monitoring and Observability Layer] : Sends Metrics/Logs
+}
+
+' Notes for clarity
+note left of [Redis]: Caches system metadata\n(e.g., route mappings, function state)
+note right of [Database\n(Cassandra)]: Stores request logs\nand route configurations
+note left of [MinIO]: Stores system artifacts\n(e.g., function code, container images)
+note right of [Ceph]: Provides temporary storage\nfor build artifacts
+note left of [Logstash]: Extracts logs from Cassandra\nand forwards to Loki/Elasticsearch
+note left of [API Gateway Layer]: Routes requests and logs data
+note right of [Compute Layer]: Executes functions and stores artifacts
+note left of [CI/CD Layer]: Deploys functions and pushes code
+note right of [Monitoring and Observability Layer]: Collects metrics and logs
+
+@enduml

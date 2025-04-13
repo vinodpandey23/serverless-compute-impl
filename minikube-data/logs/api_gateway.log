@@ -1,0 +1,119 @@
+2025-03-22 18:02:22,900 - INFO - API Gateway initialized and router included.
+2025-03-22 18:03:14,059 - INFO - Registering function: currency_converter
+2025-03-22 18:03:14,087 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:03:14,088 - INFO - Function currency_converter registered successfully
+2025-03-22 18:05:18,179 - INFO - Registering function: currency_converter
+2025-03-22 18:05:18,199 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:05:18,200 - INFO - Function currency_converter registered successfully
+2025-03-22 18:05:23,862 - INFO - Registering function: currency_converter
+2025-03-22 18:05:23,908 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:05:23,909 - INFO - Function currency_converter registered successfully
+2025-03-22 18:05:29,861 - INFO - Registering function: currency_converter
+2025-03-22 18:05:29,900 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:05:29,901 - INFO - Function currency_converter registered successfully
+2025-03-22 18:05:40,168 - INFO - Registering function: currency_converter
+2025-03-22 18:05:40,213 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:05:40,214 - INFO - Function currency_converter registered successfully
+2025-03-22 18:06:37,352 - INFO - Registering function: currency_converter
+2025-03-22 18:06:37,377 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:06:37,378 - INFO - Function currency_converter registered successfully
+2025-03-22 18:08:07,638 - INFO - Registering function: currency_converter
+2025-03-22 18:08:07,733 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:08:07,734 - INFO - Function currency_converter registered successfully
+2025-03-22 18:08:27,128 - INFO - Executing function: currency_converter
+2025-03-22 18:08:27,341 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:08:27,342 - INFO - Function currency_converter executed in 0.2121 seconds
+2025-03-22 18:11:00,283 - INFO - Executing function: currency_converter
+2025-03-22 18:11:00,373 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:11:00,374 - INFO - Function currency_converter executed in 0.0888 seconds
+2025-03-22 18:12:17,033 - INFO - Executing function: currency_converter
+2025-03-22 18:12:17,291 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:12:17,292 - INFO - Function currency_converter executed in 0.2562 seconds
+2025-03-22 18:23:00,511 - INFO - Registering function: currency_converter
+2025-03-22 18:23:00,597 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:23:00,599 - INFO - Function currency_converter registered successfully
+2025-03-22 18:23:18,201 - INFO - Executing function: currency_converter
+2025-03-22 18:23:18,420 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:23:18,420 - INFO - Function currency_converter executed in 0.2169 seconds
+2025-03-22 18:34:20,286 - INFO - Registering function: currency_converter
+2025-03-22 18:34:20,370 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:34:20,371 - INFO - Function currency_converter registered successfully
+2025-03-22 18:34:31,151 - INFO - Executing function: currency_converter
+2025-03-22 18:34:31,366 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:34:31,367 - INFO - Function currency_converter executed in 0.2144 seconds
+2025-03-22 18:37:40,055 - INFO - Registering function: currency_converter
+2025-03-22 18:37:40,131 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:37:40,131 - INFO - Function currency_converter registered successfully
+2025-03-22 18:37:54,830 - INFO - Executing function: currency_converter
+2025-03-22 18:37:57,039 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:37:57,040 - INFO - Function currency_converter executed in 2.2084 seconds
+2025-03-22 18:38:01,389 - INFO - Executing function: currency_converter
+2025-03-22 18:38:02,307 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:38:02,309 - INFO - Function currency_converter executed in 0.9186 seconds
+2025-03-22 18:38:28,194 - INFO - Executing function: currency_converter
+2025-03-22 18:38:29,121 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:38:29,122 - INFO - Function currency_converter executed in 0.9261 seconds
+2025-03-22 18:38:58,646 - INFO - Registering function: text_pipeline
+2025-03-22 18:38:58,721 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 18:38:58,723 - INFO - Function text_pipeline registered successfully
+2025-03-22 18:39:05,248 - INFO - Executing function: text_pipeline
+2025-03-22 18:39:05,600 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:39:05,601 - INFO - Function text_pipeline executed in 0.3523 seconds
+2025-03-22 18:39:08,491 - INFO - Executing function: text_pipeline
+2025-03-22 18:39:08,649 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 18:39:08,650 - INFO - Function text_pipeline executed in 0.1570 seconds
+2025-03-22 19:38:11,529 - INFO - API Gateway initialized and router included.
+2025-03-22 19:38:41,995 - INFO - Registering function: text_pipeline
+2025-03-22 19:38:42,112 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 19:38:42,113 - INFO - Function text_pipeline registered successfully
+2025-03-22 19:38:47,853 - INFO - Registering function: currency_converter
+2025-03-22 19:38:47,999 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 19:38:48,000 - INFO - Function currency_converter registered successfully
+2025-03-22 19:38:55,444 - INFO - Executing function: text_pipeline
+2025-03-22 19:38:55,859 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:38:55,860 - INFO - Function text_pipeline executed in 0.4143 seconds
+2025-03-22 19:38:57,852 - INFO - Executing function: text_pipeline
+2025-03-22 19:38:58,003 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:38:58,003 - INFO - Function text_pipeline executed in 0.1500 seconds
+2025-03-22 19:39:04,529 - INFO - Executing function: currency_converter
+2025-03-22 19:39:06,772 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:39:06,773 - INFO - Function currency_converter executed in 2.2420 seconds
+2025-03-22 19:39:09,307 - INFO - Executing function: currency_converter
+2025-03-22 19:39:10,251 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:39:10,252 - INFO - Function currency_converter executed in 0.9438 seconds
+2025-03-22 19:41:33,405 - INFO - Executing function: currency_converter
+2025-03-22 19:41:34,427 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:41:34,429 - INFO - Function currency_converter executed in 1.0203 seconds
+2025-03-22 19:41:37,046 - INFO - Executing function: currency_converter
+2025-03-22 19:41:38,006 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:41:38,007 - INFO - Function currency_converter executed in 0.9590 seconds
+2025-03-22 19:47:30,372 - INFO - Executing function: currency_converter
+2025-03-22 19:47:30,767 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:47:30,768 - INFO - Function currency_converter executed in 0.3925 seconds
+2025-03-22 19:47:52,005 - INFO - Executing function: currency_converter
+2025-03-22 19:47:52,202 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:47:52,202 - INFO - Function currency_converter executed in 0.1884 seconds
+2025-03-22 19:48:12,987 - INFO - Executing function: text_pipeline
+2025-03-22 19:48:13,360 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:48:13,361 - INFO - Function text_pipeline executed in 0.3658 seconds
+2025-03-22 19:48:18,973 - INFO - Executing function: currency_converter
+2025-03-22 19:48:19,179 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:48:19,180 - INFO - Function currency_converter executed in 0.2052 seconds
+2025-03-22 19:48:58,511 - INFO - Registering function: currency_converter
+2025-03-22 19:48:58,668 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/register "HTTP/1.1 200 OK"
+2025-03-22 19:48:58,669 - INFO - Function currency_converter registered successfully
+2025-03-22 19:49:04,190 - INFO - Executing function: currency_converter
+2025-03-22 19:49:06,338 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:49:06,340 - INFO - Function currency_converter executed in 2.1494 seconds
+2025-03-22 19:49:09,512 - INFO - Executing function: currency_converter
+2025-03-22 19:49:10,456 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:49:10,457 - INFO - Function currency_converter executed in 0.9436 seconds
+2025-03-22 19:55:11,067 - INFO - Executing function: currency_converter
+2025-03-22 19:55:11,482 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:55:11,483 - INFO - Function currency_converter executed in 0.4127 seconds
+2025-03-22 19:59:20,113 - INFO - Executing function: currency_converter
+2025-03-22 19:59:20,328 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 19:59:20,329 - INFO - Function currency_converter executed in 0.2130 seconds
+2025-03-22 20:00:06,805 - INFO - Executing function: text_pipeline
+2025-03-22 20:00:07,143 - INFO - HTTP Request: POST http://function-manager.serverless-poc.svc.cluster.local:5000/execute "HTTP/1.1 200 OK"
+2025-03-22 20:00:07,143 - INFO - Function text_pipeline executed in 0.3357 seconds

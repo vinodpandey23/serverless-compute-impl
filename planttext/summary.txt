@@ -1,0 +1,43 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define high-level components (layers)
+[User/Application] --> [API Gateway Layer] : Sends Requests
+
+package "Serverless Compute System" {
+
+  [API Gateway Layer] --> [Compute Layer] : Triggers Functions
+  [API Gateway Layer] --> [Event Streaming Layer] : Publishes Events
+  [API Gateway Layer] --> [Storage Layer] : Caches/Logs Data
+  [API Gateway Layer] --> [Monitoring and Observability Layer] : Sends Metrics/Logs/Traces
+
+  [Event Streaming Layer] --> [Compute Layer] : Triggers Event-Driven Functions
+  [Event Streaming Layer] --> [Monitoring and Observability Layer] : Sends Metrics/Logs
+
+  [AI/ML Layer] --> [Compute Layer] : Orchestrates ML Pipelines
+  [AI/ML Layer] --> [Monitoring and Observability Layer] : Sends Metrics/Logs/Traces
+
+  [CI/CD Layer] --> [Compute Layer] : Deploys Functions
+  [CI/CD Layer] --> [Storage Layer] : Pushes Function Code
+
+  [Compute Layer] --> [Storage Layer] : Caches/Stores Data
+  [Compute Layer] --> [Monitoring and Observability Layer] : Sends Metrics/Logs/Traces
+
+  [Storage Layer] --> [Monitoring and Observability Layer] : Sends Metrics/Logs
+}
+
+' Notes for clarity
+note right of [User/Application]: External entity sending\nHTTP requests to the system
+note left of [API Gateway Layer]: Handles request routing,\nauthentication, and logging
+note right of [Compute Layer]: Executes general-purpose\nand AI/ML functions
+note left of [Event Streaming Layer]: Manages asynchronous\nprocessing (e.g., batch ML inference)
+note right of [AI/ML Layer]: Manages AI/ML workflows,\nincluding pipeline orchestration
+note left of [CI/CD Layer]: Automates deployment\nof functions and artifacts
+note right of [Storage Layer]: Manages caching, logging,\nand storage of system artifacts
+note left of [Monitoring and Observability Layer]: Monitors metrics, logs,\nand traces across the system
+
+@enduml

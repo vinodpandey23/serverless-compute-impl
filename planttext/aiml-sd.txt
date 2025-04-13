@@ -1,0 +1,31 @@
+@startuml
+
+skinparam sequenceMessageAlign center
+
+actor User
+participant "[API Gateway]" as APIGateway
+participant "[Nuclio Function Manager]" as NuclioManager
+participant "[Kubernetes API Server]" as KubeAPI
+participant "[Kubeflow Pipelines]" as Kubeflow
+participant "[ML Function Pod]" as MLFunctionPod
+
+== AI/ML Function Deployment ==
+User -> APIGateway : Send AI/ML function deployment request
+APIGateway -> NuclioManager : Forward request
+NuclioManager -> KubeAPI : Create deployment YAML
+KubeAPI -> Kubeflow : Register function in ML pipeline
+Kubeflow -> MLFunctionPod : Deploy ML model as pod
+MLFunctionPod -> NuclioManager : Acknowledge deployment
+NuclioManager -> APIGateway : Deployment success response
+APIGateway -> User : Notify function is ready
+
+== AI/ML Function Execution ==
+User -> APIGateway : Invoke AI/ML function
+APIGateway -> NuclioManager : Forward execution request
+NuclioManager -> Kubeflow : Trigger ML workflow
+Kubeflow -> MLFunctionPod : Execute model
+MLFunctionPod -> NuclioManager : Return result
+NuclioManager -> APIGateway : Forward result
+APIGateway -> User : Return function response
+
+@enduml

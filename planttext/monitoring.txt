@@ -1,0 +1,41 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define packages and components
+package "Monitoring and Observability Layer" {
+
+  ' Group Monitoring and Observability components
+  package "Monitoring and Observability" {
+    [Prometheus/Grafana] #..# [Loki] : Aggregates Logs
+    [Loki] #..# [Elasticsearch] : Indexes Logs for Search
+    [Prometheus/Grafana] #..# [Jaeger] : Distributed Tracing
+  }
+
+  ' Interactions with other layers
+  [API Gateway Layer] --> [Prometheus/Grafana] : Sends Metrics
+  [API Gateway Layer] --> [Loki] : Sends Logs
+  [API Gateway Layer] --> [Jaeger] : Sends Traces
+  [Compute Layer] --> [Prometheus/Grafana] : Sends Function Metrics
+  [Compute Layer] --> [Loki] : Sends Function Logs
+  [Compute Layer] --> [Jaeger] : Sends Function Traces
+  [Event Streaming Layer] --> [Prometheus/Grafana] : Sends Event Metrics
+  [Event Streaming Layer] --> [Loki] : Sends Event Logs
+  [Storage Layer] --> [Prometheus/Grafana] : Sends Storage Metrics
+  [Storage Layer] --> [Loki] : Sends Storage Logs
+}
+
+' Notes for clarity
+note left of [Prometheus/Grafana]: Collects and visualizes\nsystem metrics
+note right of [Loki]: Aggregates logs from\nall system components
+note left of [Elasticsearch]: Indexes logs for\nsearch and analysis
+note right of [Jaeger]: Provides distributed tracing\nfor request flows
+note left of [API Gateway Layer]: Sends metrics, logs,\nand traces
+note right of [Compute Layer]: Sends function metrics,\nlogs, and traces
+note left of [Event Streaming Layer]: Sends event metrics\nand logs
+note right of [Storage Layer]: Sends storage metrics\nand logs
+
+@enduml

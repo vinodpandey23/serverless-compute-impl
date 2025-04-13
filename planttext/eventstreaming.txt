@@ -1,0 +1,25 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define packages and components
+package "Event Streaming Layer" {
+
+  ' Event streaming components
+  [Kafka] #..# [Nuclio] : Triggers Event-Driven Functions
+
+  ' External integrations
+  [APISIX] --> [Kafka] : Publishes Events
+  [Kafka] --> [Monitoring and Observability Layer] : Sends Metrics/Logs
+}
+
+' Notes for clarity
+note left of [Kafka]: Event streaming platform\nfor asynchronous processing\n(e.g., batch ML inference)
+note right of [Nuclio]: Serverless compute platform\nfor function execution
+note right of [APISIX]: API Gateway for routing\nevents
+note left of [Monitoring and Observability Layer]: Collects metrics and logs
+
+@enduml

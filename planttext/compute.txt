@@ -1,0 +1,40 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define packages and components
+package "Compute Layer" {
+
+  ' Compute components
+  [Nuclio] #..# [Kubernetes] : Orchestrates Deployment
+
+  ' Group Storage and Database components
+  package "Storage and Database" {
+    [Redis] #..# [MinIO] : Stores Function Code/Images
+    [MinIO] #..# [Ceph] : Temporary Build Artifacts
+  }
+
+  [Nuclio] #..# [Redis] : Caches Function Metadata
+  [Nuclio] #..# [MinIO] : Stores Function Code/Images
+  [Nuclio] #..# [Ceph] : Temporary Build Artifacts
+
+  ' External integrations
+  [APISIX] --> [Nuclio] : Triggers Functions
+  [Kubeflow] --> [Nuclio] : Orchestrates ML Pipelines
+  [Nuclio] --> [Monitoring and Observability Layer] : Sends Metrics/Logs/Traces
+}
+
+' Notes for clarity
+note right of [Nuclio]: Serverless compute platform\nfor general-purpose and AI/ML functions
+note right of [Kubernetes]: Manages scaling and deployment\nof Nuclio functions
+note left of [Redis]: Caches function metadata\n(e.g., availability, state)
+note right of [MinIO]: Stores system artifacts\n(e.g., function code, container images)
+note left of [Ceph]: Provides temporary storage\nfor build artifacts
+note right of [APISIX]: API Gateway for routing\nrequests
+note left of [Kubeflow]: Orchestrates ML pipelines\nfor training and serving
+note right of [Monitoring and Observability Layer]: Collects metrics, logs,\nand traces
+
+@enduml

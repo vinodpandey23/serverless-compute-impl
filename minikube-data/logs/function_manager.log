@@ -1,0 +1,215 @@
+2025-03-22 18:02:22,638 - INFO - Initializing Execution Service
+2025-03-22 18:02:22,642 - INFO - Function Manager initialized and router included.
+2025-03-22 18:03:14,083 - INFO - Registering function: currency_converter
+2025-03-22 18:03:14,085 - ERROR - handler.py not found in /mnt/functions/currency_converter.
+2025-03-22 18:05:07,168 - INFO - Initializing Execution Service
+2025-03-22 18:05:07,171 - INFO - Function Manager initialized and router included.
+2025-03-22 18:05:18,190 - INFO - Registering function: currency_converter
+2025-03-22 18:05:18,196 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:05:18,198 - ERROR - handler.py not found in /mnt/functions/currency_converter.
+2025-03-22 18:05:23,870 - INFO - Registering function: currency_converter
+2025-03-22 18:05:23,876 - INFO - Removing existing directory for currency_converter...
+2025-03-22 18:05:23,902 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:05:23,905 - ERROR - handler.py not found in /mnt/functions/currency_converter.
+2025-03-22 18:05:29,869 - INFO - Registering function: currency_converter
+2025-03-22 18:05:29,875 - INFO - Removing existing directory for currency_converter...
+2025-03-22 18:05:29,895 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:05:29,898 - ERROR - handler.py not found in /mnt/functions/currency_converter.
+2025-03-22 18:05:40,176 - INFO - Registering function: currency_converter
+2025-03-22 18:05:40,182 - INFO - Removing existing directory for currency_converter...
+2025-03-22 18:05:40,205 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:05:40,212 - ERROR - handler.py not found in /mnt/functions/currency_converter.
+2025-03-22 18:06:37,362 - INFO - Registering function: currency_converter
+2025-03-22 18:06:37,373 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:06:37,376 - ERROR - handler.py not found in /mnt/functions/currency_converter.
+2025-03-22 18:07:58,374 - INFO - Initializing Execution Service
+2025-03-22 18:07:58,378 - INFO - Function Manager initialized and router included.
+2025-03-22 18:08:07,652 - INFO - Registering function: currency_converter
+2025-03-22 18:08:07,658 - INFO - Removing existing directory for currency_converter...
+2025-03-22 18:08:07,678 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:08:07,728 - INFO - Extracted zip contents for currency_converter into /mnt/functions/currency_converter
+2025-03-22 18:08:27,136 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:08:27,143 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 18:08:27,147 - INFO - Starting container for currency_converter...
+2025-03-22 18:08:27,289 - INFO - Container for currency_converter started successfully.
+2025-03-22 18:08:27,290 - INFO - Invoking function in container 09228a14e11f0144b59c778637a5e13a7d46564c74184ccd10ea47b1e4e292c7...
+2025-03-22 18:08:27,339 - INFO - Exec Result: ExecResult(exit_code=2, output=b"python: can't open file '/mnt/functions/runner.py': [Errno 2] No such file or directory\n")
+2025-03-22 18:08:27,340 - INFO - Exec Output: b"python: can't open file '/mnt/functions/runner.py': [Errno 2] No such file or directory\n"
+2025-03-22 18:08:27,341 - ERROR - Function execution failed with exit code: 2
+2025-03-22 18:10:53,144 - INFO - Initializing Execution Service
+2025-03-22 18:10:53,148 - INFO - Function Manager initialized and router included.
+2025-03-22 18:11:00,299 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:11:00,308 - INFO - Reusing warm container for currency_converter
+2025-03-22 18:11:00,308 - INFO - Invoking function in container 09228a14e11f0144b59c778637a5e13a7d46564c74184ccd10ea47b1e4e292c7...
+2025-03-22 18:11:00,371 - INFO - Exec Result: ExecResult(exit_code=2, output=b"python: can't open file '/mnt/functions/runner.py': [Errno 2] No such file or directory\n")
+2025-03-22 18:11:00,371 - INFO - Exec Output: b"python: can't open file '/mnt/functions/runner.py': [Errno 2] No such file or directory\n"
+2025-03-22 18:11:00,372 - ERROR - Function execution failed with exit code: 2
+2025-03-22 18:12:17,047 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:12:17,056 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 18:12:17,060 - INFO - Starting container for currency_converter...
+2025-03-22 18:12:17,237 - INFO - Container for currency_converter started successfully.
+2025-03-22 18:12:17,237 - INFO - Invoking function in container 65f0efa3a794d6e8b7b76ebb7769b7adcfaeb6c974c43a97671b8ee7ec0c33d2...
+2025-03-22 18:12:17,289 - INFO - Exec Result: ExecResult(exit_code=2, output=b"python: can't open file '/app/functions/runner.py': [Errno 2] No such file or directory\n")
+2025-03-22 18:12:17,290 - INFO - Exec Output: b"python: can't open file '/app/functions/runner.py': [Errno 2] No such file or directory\n"
+2025-03-22 18:12:17,290 - ERROR - Function execution failed with exit code: 2
+2025-03-22 18:22:47,412 - INFO - Initializing Execution Service
+2025-03-22 18:22:47,418 - INFO - Function Manager initialized and router included.
+2025-03-22 18:23:00,525 - INFO - Registering function: currency_converter
+2025-03-22 18:23:00,533 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:23:00,588 - INFO - Extracted zip contents for currency_converter into /mnt/functions/currency_converter
+2025-03-22 18:23:18,211 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:23:18,219 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 18:23:18,222 - INFO - Starting container for currency_converter...
+2025-03-22 18:23:18,365 - INFO - Container for currency_converter started successfully.
+2025-03-22 18:23:18,365 - INFO - Invoking function in container 515ac8d8adc76186f2c8026d8ec2706a4bfb572998812cb651c20b6f8bf22ff0...
+2025-03-22 18:23:18,418 - INFO - Exec Result: ExecResult(exit_code=2, output=b"python: can't open file '/app/runner.py': [Errno 2] No such file or directory\n")
+2025-03-22 18:23:18,418 - INFO - Exec Output: b"python: can't open file '/app/runner.py': [Errno 2] No such file or directory\n"
+2025-03-22 18:23:18,419 - ERROR - Function execution failed with exit code: 2
+2025-03-22 18:34:09,886 - INFO - Initializing Execution Service
+2025-03-22 18:34:09,890 - INFO - Function Manager initialized and router included.
+2025-03-22 18:34:20,305 - INFO - Registering function: currency_converter
+2025-03-22 18:34:20,313 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:34:20,359 - INFO - Extracted zip contents for currency_converter into /mnt/functions/currency_converter
+2025-03-22 18:34:31,159 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:34:31,166 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 18:34:31,170 - INFO - Starting container for currency_converter...
+2025-03-22 18:34:31,301 - INFO - Container for currency_converter started successfully.
+2025-03-22 18:34:31,301 - INFO - Invoking function in container a656f59994add2a69265765b4ca6778f73b0624657da0aa557ef6f724b7743a9...
+2025-03-22 18:34:31,363 - INFO - Exec Result: ExecResult(exit_code=1, output=b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 12, in load_handler\n    raise FileNotFoundError(\nFileNotFoundError: No directory found for function: currency_converter\n')
+2025-03-22 18:34:31,364 - INFO - Exec Output: b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 12, in load_handler\n    raise FileNotFoundError(\nFileNotFoundError: No directory found for function: currency_converter\n'
+2025-03-22 18:34:31,365 - ERROR - Function execution failed with exit code: 1
+2025-03-22 18:37:17,607 - INFO - Initializing Execution Service
+2025-03-22 18:37:17,611 - INFO - Function Manager initialized and router included.
+2025-03-22 18:37:30,714 - INFO - Initializing Execution Service
+2025-03-22 18:37:30,717 - INFO - Function Manager initialized and router included.
+2025-03-22 18:37:40,063 - INFO - Registering function: currency_converter
+2025-03-22 18:37:40,067 - INFO - Removing existing directory for currency_converter...
+2025-03-22 18:37:40,097 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 18:37:40,127 - INFO - Extracted zip contents for currency_converter into /mnt/functions/currency_converter
+2025-03-22 18:37:54,838 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:37:54,846 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 18:37:54,850 - INFO - Starting container for currency_converter...
+2025-03-22 18:37:54,989 - INFO - Container for currency_converter started successfully.
+2025-03-22 18:37:54,990 - INFO - Invoking function in container 60ac37add242e41bba9290ed6370159159ce0749e5e33868bb8648874eb21aa9...
+2025-03-22 18:37:57,037 - INFO - Function execution completed.
+2025-03-22 18:38:01,392 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:38:01,399 - INFO - Reusing warm container for currency_converter
+2025-03-22 18:38:01,399 - INFO - Invoking function in container 60ac37add242e41bba9290ed6370159159ce0749e5e33868bb8648874eb21aa9...
+2025-03-22 18:38:02,305 - INFO - Function execution completed.
+2025-03-22 18:38:28,201 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 18:38:28,208 - INFO - Reusing warm container for currency_converter
+2025-03-22 18:38:28,208 - INFO - Invoking function in container 60ac37add242e41bba9290ed6370159159ce0749e5e33868bb8648874eb21aa9...
+2025-03-22 18:38:29,118 - INFO - Function execution completed.
+2025-03-22 18:38:58,655 - INFO - Registering function: text_pipeline
+2025-03-22 18:38:58,664 - INFO - Created new directory for text_pipeline at /mnt/functions/text_pipeline
+2025-03-22 18:38:58,712 - INFO - Extracted zip contents for text_pipeline into /mnt/functions/text_pipeline
+2025-03-22 18:39:05,252 - INFO - Executing function: text_pipeline with payload: {'text': 'Vinod is learning serverless architecture with Python. Python is amazing!'}
+2025-03-22 18:39:05,257 - INFO - Cold start: Initializing container for text_pipeline
+2025-03-22 18:39:05,260 - INFO - Starting container for text_pipeline...
+2025-03-22 18:39:05,408 - INFO - Container for text_pipeline started successfully.
+2025-03-22 18:39:05,409 - INFO - Invoking function in container 08a63255de3d54a98ded4e3d35f2b939552bc07d00165f33ab450b9933626b04...
+2025-03-22 18:39:05,599 - INFO - Function execution completed.
+2025-03-22 18:39:08,495 - INFO - Executing function: text_pipeline with payload: {'text': 'Vinod is learning serverless architecture with Python. Python is amazing!'}
+2025-03-22 18:39:08,502 - INFO - Reusing warm container for text_pipeline
+2025-03-22 18:39:08,503 - INFO - Invoking function in container 08a63255de3d54a98ded4e3d35f2b939552bc07d00165f33ab450b9933626b04...
+2025-03-22 18:39:08,648 - INFO - Function execution completed.
+2025-03-22 19:37:43,767 - INFO - Initializing Cleanup Service
+2025-03-22 19:37:43,768 - INFO - Initializing Execution Service
+2025-03-22 19:37:43,771 - INFO - Function Manager initialized and router included.
+2025-03-22 19:38:11,284 - INFO - Initializing Cleanup Service
+2025-03-22 19:38:11,285 - INFO - Initializing Execution Service
+2025-03-22 19:38:11,288 - INFO - Function Manager initialized and router included.
+2025-03-22 19:38:42,034 - INFO - Registering function: text_pipeline
+2025-03-22 19:38:42,040 - INFO - Removing existing directory for text_pipeline...
+2025-03-22 19:38:42,080 - INFO - Created new directory for text_pipeline at /mnt/functions/text_pipeline
+2025-03-22 19:38:42,108 - INFO - Extracted zip contents for text_pipeline into /mnt/functions/text_pipeline
+2025-03-22 19:38:47,861 - INFO - Registering function: currency_converter
+2025-03-22 19:38:47,866 - INFO - Removing existing directory for currency_converter...
+2025-03-22 19:38:47,949 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 19:38:47,993 - INFO - Extracted zip contents for currency_converter into /mnt/functions/currency_converter
+2025-03-22 19:38:55,453 - INFO - Executing function: text_pipeline with payload: {'text': 'Vinod is learning serverless architecture with Python. Python is amazing!'}
+2025-03-22 19:38:55,461 - INFO - Cold start: Initializing container for text_pipeline
+2025-03-22 19:38:55,464 - INFO - Starting container for text_pipeline...
+2025-03-22 19:38:55,649 - INFO - Container for text_pipeline started successfully.
+2025-03-22 19:38:55,649 - INFO - Invoking function in container 760cdc49c7d2175df46ba77144756e47fcf798fcc1f5680650b9af32900300a7...
+2025-03-22 19:38:55,858 - INFO - Function execution completed.
+2025-03-22 19:38:57,855 - INFO - Executing function: text_pipeline with payload: {'text': 'Vinod is learning serverless architecture with Python. Python is amazing!'}
+2025-03-22 19:38:57,862 - INFO - Reusing warm container for text_pipeline
+2025-03-22 19:38:57,862 - INFO - Invoking function in container 760cdc49c7d2175df46ba77144756e47fcf798fcc1f5680650b9af32900300a7...
+2025-03-22 19:38:58,002 - INFO - Function execution completed.
+2025-03-22 19:39:04,535 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:39:04,541 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 19:39:04,544 - INFO - Starting container for currency_converter...
+2025-03-22 19:39:04,697 - INFO - Container for currency_converter started successfully.
+2025-03-22 19:39:04,697 - INFO - Invoking function in container 31ecc1bca2b4f41a86cf81f553f6e68da4c001141df8233042debcab613489a7...
+2025-03-22 19:39:06,769 - INFO - Function execution completed.
+2025-03-22 19:39:09,310 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:39:09,317 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:39:09,318 - INFO - Invoking function in container 31ecc1bca2b4f41a86cf81f553f6e68da4c001141df8233042debcab613489a7...
+2025-03-22 19:39:10,249 - INFO - Function execution completed.
+2025-03-22 19:41:33,425 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:41:33,434 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:41:33,434 - INFO - Invoking function in container 31ecc1bca2b4f41a86cf81f553f6e68da4c001141df8233042debcab613489a7...
+2025-03-22 19:41:34,424 - INFO - Function execution completed.
+2025-03-22 19:41:37,050 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:41:37,059 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:41:37,059 - INFO - Invoking function in container 31ecc1bca2b4f41a86cf81f553f6e68da4c001141df8233042debcab613489a7...
+2025-03-22 19:41:38,003 - INFO - Function execution completed.
+2025-03-22 19:47:30,395 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:47:30,404 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 19:47:30,407 - INFO - Starting container for currency_converter...
+2025-03-22 19:47:30,612 - INFO - Container for currency_converter started successfully.
+2025-03-22 19:47:30,612 - INFO - Invoking function in container 0cea26b4349771c5ca958487e6cd160dd38efeec142390941d47733bef164437...
+2025-03-22 19:47:30,766 - INFO - Exec Result: ExecResult(exit_code=1, output=b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n')
+2025-03-22 19:47:30,766 - INFO - Exec Output: b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n'
+2025-03-22 19:47:30,766 - ERROR - Function execution failed with exit code: 1
+2025-03-22 19:47:52,027 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:47:52,034 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:47:52,034 - INFO - Invoking function in container 0cea26b4349771c5ca958487e6cd160dd38efeec142390941d47733bef164437...
+2025-03-22 19:47:52,200 - INFO - Exec Result: ExecResult(exit_code=1, output=b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n')
+2025-03-22 19:47:52,201 - INFO - Exec Output: b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n'
+2025-03-22 19:47:52,201 - ERROR - Function execution failed with exit code: 1
+2025-03-22 19:48:13,009 - INFO - Executing function: text_pipeline with payload: {'text': 'Vinod is learning serverless architecture with Python. Python is amazing!'}
+2025-03-22 19:48:13,015 - INFO - Cold start: Initializing container for text_pipeline
+2025-03-22 19:48:13,018 - INFO - Starting container for text_pipeline...
+2025-03-22 19:48:13,224 - INFO - Container for text_pipeline started successfully.
+2025-03-22 19:48:13,225 - INFO - Invoking function in container 74660c89b772477d3816fb893a46230a2cbac10354ea0024cf4fb6e414ffbe67...
+2025-03-22 19:48:13,359 - INFO - Function execution completed.
+2025-03-22 19:48:18,980 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:48:18,988 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:48:18,989 - INFO - Invoking function in container 0cea26b4349771c5ca958487e6cd160dd38efeec142390941d47733bef164437...
+2025-03-22 19:48:19,177 - INFO - Exec Result: ExecResult(exit_code=1, output=b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n')
+2025-03-22 19:48:19,178 - INFO - Exec Output: b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n'
+2025-03-22 19:48:19,178 - ERROR - Function execution failed with exit code: 1
+2025-03-22 19:48:58,521 - INFO - Registering function: currency_converter
+2025-03-22 19:48:58,528 - INFO - Removing existing directory for currency_converter...
+2025-03-22 19:48:58,625 - INFO - Created new directory for currency_converter at /mnt/functions/currency_converter
+2025-03-22 19:48:58,664 - INFO - Extracted zip contents for currency_converter into /mnt/functions/currency_converter
+2025-03-22 19:49:04,196 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:49:04,206 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:49:04,207 - INFO - Invoking function in container 0cea26b4349771c5ca958487e6cd160dd38efeec142390941d47733bef164437...
+2025-03-22 19:49:06,335 - INFO - Function execution completed.
+2025-03-22 19:49:09,515 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:49:09,525 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:49:09,525 - INFO - Invoking function in container 0cea26b4349771c5ca958487e6cd160dd38efeec142390941d47733bef164437...
+2025-03-22 19:49:10,453 - INFO - Function execution completed.
+2025-03-22 19:55:11,084 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:55:11,093 - INFO - Cold start: Initializing container for currency_converter
+2025-03-22 19:55:11,097 - INFO - Starting container for currency_converter...
+2025-03-22 19:55:11,323 - INFO - Container for currency_converter started successfully.
+2025-03-22 19:55:11,324 - INFO - Invoking function in container 760892398fe0572199a420a0060cd8155e140391e5dbd24c4f44ca9ad9a9877b...
+2025-03-22 19:55:11,480 - INFO - Exec Result: ExecResult(exit_code=1, output=b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n')
+2025-03-22 19:55:11,481 - INFO - Exec Output: b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n'
+2025-03-22 19:55:11,481 - ERROR - Function execution failed with exit code: 1
+2025-03-22 19:59:20,131 - INFO - Executing function: currency_converter with payload: {'base_currency': 'USD', 'target_currency': 'SGD', 'amount': 100}
+2025-03-22 19:59:20,140 - INFO - Reusing warm container for currency_converter
+2025-03-22 19:59:20,141 - INFO - Invoking function in container 760892398fe0572199a420a0060cd8155e140391e5dbd24c4f44ca9ad9a9877b...
+2025-03-22 19:59:20,326 - INFO - Exec Result: ExecResult(exit_code=1, output=b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n')
+2025-03-22 19:59:20,327 - INFO - Exec Output: b'Traceback (most recent call last):\n  File "/app/runner.py", line 57, in <module>\n    handler = load_handler(funct_name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/app/runner.py", line 29, in load_handler\n    spec.loader.exec_module(module)\n  File "<frozen importlib._bootstrap_external>", line 940, in exec_module\n  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\n  File "/mnt/functions/currency_converter/handler.py", line 2, in <module>\n    from utils.converter import get_exchange_rate, convert_currency\n  File "/mnt/functions/currency_converter/utils/converter.py", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named \'requests\'\n'
+2025-03-22 19:59:20,327 - ERROR - Function execution failed with exit code: 1
+2025-03-22 20:00:06,813 - INFO - Executing function: text_pipeline with payload: {'text': 'Vinod is learning serverless architecture with Python. Python is amazing!'}
+2025-03-22 20:00:06,821 - INFO - Cold start: Initializing container for text_pipeline
+2025-03-22 20:00:06,824 - INFO - Starting container for text_pipeline...
+2025-03-22 20:00:07,013 - INFO - Container for text_pipeline started successfully.
+2025-03-22 20:00:07,013 - INFO - Invoking function in container 97d1d0065a1f0d65cb0f21670608e621ac824f6fc68e39f6643cb02ce43a9f54...
+2025-03-22 20:00:07,142 - INFO - Function execution completed.

@@ -1,0 +1,31 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontSize 14
+skinparam componentStyle uml2
+
+' Define packages and components
+package "AI/ML Layer" {
+
+  ' Group AI/ML components
+  package "AI/ML Management" {
+    [Kubeflow] #..# [Jupyter Notebook] : Develops/Deploys AI/ML Functions
+    [Kubeflow] #..# [MLflow] : Tracks AI/ML Experiments
+    [Kubeflow] #..# [DVC] : Versions AI/ML Configurations
+  }
+
+  ' Interactions with other components
+  [Kubeflow] --> [Nuclio] : Orchestrates ML Pipelines
+  [AI/ML Management] --> [Monitoring and Observability Layer] : Sends Metrics/Logs/Traces
+}
+
+' Notes for clarity
+note right of [Nuclio]: Serverless compute platform\nfor general-purpose and AI/ML functions
+note right of [Kubeflow]: Orchestrates ML pipelines\nfor training and serving
+note left of [Jupyter Notebook]: Interactive environment\nfor developing AI/ML functions
+note right of [MLflow]: Tracks AI/ML experiments\nand system-level metadata
+note left of [DVC]: Versions AI/ML configurations\nfor reproducibility
+note right of [Monitoring and Observability Layer]: Collects metrics, logs,\nand traces
+
+@enduml

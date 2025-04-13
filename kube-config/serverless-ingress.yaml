@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: serverless-ingress
+  namespace: serverless-poc
+spec:
+  rules:
+    - host: serverless-poc.local
+      http:
+        paths:
+          - path: /register
+            pathType: Prefix
+            backend:
+              service:
+                name: api-gateway
+                port:
+                  number: 80
+          - path: /execute
+            pathType: Prefix
+            backend:
+              service:
+                name: api-gateway
+                port:
+                  number: 80
